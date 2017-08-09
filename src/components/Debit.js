@@ -3,12 +3,13 @@ import React, {Component} from 'react'
 class Debit extends Component {
 
     render() {
-        const key = this.props.key
         return(
-            <div key={this.props.key}>
+            <div key={this.props.id}>
 
-                <p>Debit Description: {this.props.debitDescription}</p>
-                <p>Debit Amount: {this.props.debitAmount}</p>
+                
+                <p><strong> Amount: {this.props.debitAmount}</strong></p>
+                <p>Description: {this.props.debitDescription}</p>
+                <p>Date: {this.props.debitDate}</p>
             </div>
         ) 
     }
